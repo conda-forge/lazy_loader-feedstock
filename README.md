@@ -9,9 +9,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lazy_loader-fee
 
 Summary: Easily load subpackages and functions on demand
 
-Development: https://github.com/scientific-python/lazy-loader
+Development: https://github.com/scientific-python/lazy_loader
 
-Documentation: https://github.com/scientific-python/lazy-loader
+Documentation: https://github.com/scientific-python/lazy_loader
 
 `lazy-loader` makes it easy to load subpackages and functions on demand.
 
