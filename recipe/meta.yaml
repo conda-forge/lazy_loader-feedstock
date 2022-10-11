@@ -1,5 +1,5 @@
 {% set name = "lazy_loader" %}
-{% set version = "0.1rc2" %}
+{% set version = "0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lazy_loader-{{ version }}.tar.gz
-  sha256: 1130fe8ddf64e7bfbeea185e14a08575b55a4680ed1585482eaeb796faca242b
+  sha256: 77ce7f2737ebabf9c0ff73b4a99c947876d74d24c2f026544e32246ecca5feca
 
 build:
   number: 0
@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - flit-core >=3.3,<4
-    - python >=3.8
+    - flit-core >=3.7,<4
+    - python >=3.7
   run:
-    - python >=3.8
+    - python >=3.7
 
 test:
   imports:
@@ -42,9 +42,10 @@ about:
 
     PyPI: [https://pypi.org/project/lazy_loader/](https://pypi.org/project/lazy_loader/)
 
-  doc_url: https://github.com/scientific-python/lazy-loader
-  dev_url: https://github.com/scientific-python/lazy-loader
+  doc_url: https://github.com/scientific-python/lazy_loader
+  dev_url: https://github.com/scientific-python/lazy_loader
 
 extra:
   recipe-maintainers:
     - sugatoray
+    - bmcfee
