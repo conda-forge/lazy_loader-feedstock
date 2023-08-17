@@ -1,5 +1,5 @@
 {% set name = "lazy_loader" %}
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lazy_loader-{{ version }}.tar.gz
-  sha256: 0edc7a5175c400acb108f283749951fefdadedeb00adcec6e88b974a9254f18a
+  sha256: 3b68898e34f5b2a29daaaac172c6555512d0f32074f147e2254e4a6d9d838f37
 
 build:
   number: 0
