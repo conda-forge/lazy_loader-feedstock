@@ -1,11 +1,11 @@
-About lazy_loader
-=================
+About lazy_loader-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lazy_loader-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/lazy_loader/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lazy_loader-feedstock/blob/main/LICENSE.txt)
 
 Summary: Easily load subpackages and functions on demand
 
