@@ -1,5 +1,5 @@
 {% set name = "lazy_loader" %}
-{% set version = "0.3" %}
+{% set version = "0.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lazy_loader-{{ version }}.tar.gz
-  sha256: 3b68898e34f5b2a29daaaac172c6555512d0f32074f147e2254e4a6d9d838f37
+  sha256: 47c75182589b91a4e1a85a136c074285a5ad4d9f39c63e0d7fb76391c4574cd1
 
 build:
   number: 0
@@ -20,8 +20,12 @@ requirements:
     - pip
     - flit-core >=3.7,<4
     - python >=3.7
+    - packaging
+    - importlib-metadata
   run:
     - python >=3.7
+    - packaging
+    - importlib-metadata
 
 test:
   imports:
