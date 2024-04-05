@@ -20,6 +20,8 @@ requirements:
     - pip
     - flit-core >=3.7,<4
     - python >=3.7
+    - packaging
+    - importlib-metadata
   run:
     - python >=3.7
 
