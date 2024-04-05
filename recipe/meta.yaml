@@ -24,6 +24,8 @@ requirements:
     - importlib-metadata
   run:
     - python >=3.7
+    - packaging
+    - importlib-metadata
 
 test:
   imports:
