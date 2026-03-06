@@ -17,14 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - flit-core >=3.7,<4
+    - setuptools>=61.2
     - python {{ python_min }}
     - packaging
-    - importlib-metadata
   run:
     - python >={{ python_min }}
     - packaging
-    - importlib-metadata
 
 test:
   imports:
