@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - setuptools>=61.2
+    - setuptools >=61.2
     - python {{ python_min }}
     - packaging
   run:
