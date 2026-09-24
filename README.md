@@ -22,10 +22,11 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16314&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/lazy_loader-feedstock?branchName=main">
+      <a href="https://github.com/conda-forge/lazy_loader-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/lazy_loader-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
       </a>
     </td>
   </tr>
@@ -49,31 +50,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `lazy-loader, lazy_loader` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install lazy-loader lazy_loader
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install lazy-loader lazy_loader
 ```
 
-It is possible to list all of the versions of `lazy-loader` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add lazy-loader lazy_loader
+# for installing globally
+pixi global install lazy-loader lazy_loader
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `lazy-loader` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search lazy-loader --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search lazy-loader --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search lazy-loader --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -85,6 +128,8 @@ mamba repoquery whoneeds lazy-loader --channel conda-forge
 # List dependencies of `lazy-loader`:
 mamba repoquery depends lazy-loader --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
